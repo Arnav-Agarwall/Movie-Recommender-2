@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MinMaxScaler
 
 # Initialize Flask app
-app = Flask(Movie_Recommend)
+app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load dataset
